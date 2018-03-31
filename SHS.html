@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<title>Stimac University | APPLY</title>
+<link rel="icon" href="icon/university.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pagedesign.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="fontface.css">
+
+
+<!-- Sidebar/menu -->
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" id="mySidebar"><br>
+	<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+	 <div class="w3-container">
+   <img src = "Image\LOGO1.png" width = "180" height = "120" class= "w3-hover-animate-zoom w3-animate-zoom-start"  >
+    <h3 class="w3-padding-32"><b>STIMAC<br>UNIVERSITY</b></h3>
+   </div>
+
+	 <!-- Menu -->
+	  <div class="w3-bar-block">
+        
+              <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white class="dropbtn" ">HOME</a>  
+        <a href="Branch.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">BRANCH</a> 
+        <div class="dropdown">
+        <a href="apply1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">APPLY</a> 
+        <div class="dropdown-content">
+           <a href="COLLEGE.html">COLLEGE</a>
+           <a href="SHS.html">SR. HIGH</a>
+           <a href="JHS.html">JR. HIGH</a>
+        </div>  
+        </div>
+        <a href="course.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COURSE</a> 
+        <a href="abby.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CONTACT</a> 
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ABOUT US</a>
+        <br>
+        Cirilo Varias
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>STIMAC UNIVERSITY</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+	<div 
+		class="w3-overlay w3-hide-large"
+		onclick="w3_close()"
+		title="close side menu"
+		id="myOverlay">	
+	</div>
+
+<!-- !PAGE CONTENT! -->
+	
+	<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<!-- Header -->
+ 
+<!--Apply-->
+<div class = "div-form">
+<center class = "w3-responsive">
+
+<link rel="stylesheet" href="Form.css">
+
+<h2 class="w3-xxxlarge w3-text-red" align = "center"> <center> Senior High Registration Form </center> </h2>
+<fieldset>
+<legend><h3>Personal Information</h3></legend>
+<div>
+<form action="submit.php" method="POST">
+<label for="fname">First Name</label>
+<input type="text" placeholder="First Name">
+
+<label for="lname">Last Name</label>
+<input type="text" placeholder="Last Name">
+
+<label for="Email">Email Address</label>
+<input type="text" placeholder="Email">
+
+<label for="cnumber">Contact Number (Mobile Prefered)</label>
+<input type="text" placeholder="Contact Number">
+
+<label for="org">Organisation (If Applicable)</label>
+<input type="text" placeholder="Organisation">
+
+<label for="AddressLine1">Address Line 1</label>
+<input type="text" placeholder="Address"
+
+<label for="AddressLine2">Address Line 2</label>
+<input type="text" placeholder="Address"
+
+<label for="CT">City/Town</label>
+<input type="text" placeholder="City/Town">
+
+<label for="CT">State/Province</label>
+<input type="text" id="state_province" placeholder="State/Province">
+
+<label for="CT">Post Code</label>
+<input type="text" id="postcode" placeholder="Post Code">
+</fieldset>
+
+<div>
+<fieldset>
+<legend><h3>Payment Information</h3></legend>
+<div>
+<label for="payment methods">Payment Method</label>
+<select id="Payment Methods" name="Payment Method">
+<option value="Select Payment Methods">Select Payment Method</option>
+<option value="Landbank">Landbank</option>
+<option value="BDO">BDO</option>
+<option value="Cebuana Lhuiller">Cebuana Lhuiller</option>
+<option value="Others">Others</option>
+</select>
+<label for="cno.">Card Number (For Cardholders only)</label>
+<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+
+<label for="code">Card Verification Value (For Cardholders only)</label>
+<input type="text" placeholder="XXXX">
+
+<p>Note: Please be reminded that online transactions are more priotized than Over the Counter Transaction</p>
+</fieldset>
+<br><br>
+
+
+<input type="checkbox">
+<label for="agr">I agree with the Privacy Policy and Terms & Conditions</label>
+<br>
+<input type="submit" value="Submit"> </fieldset> </fieldset>
+</div>
+</div>
+</form>
+</body>
+</html>
+
+ <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+

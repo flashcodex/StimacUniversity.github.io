@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>Stimac University | ABOUT US</title>
+<link rel="icon" href="icon/university.ico" type="image\x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pagedesign.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="fontface.css">
+
+<!-- Sidebar/menu -->
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" id="mySidebar"><br>
+	<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+	 <div class="w3-container">
+		 <img src = "Image\LOGO1.png" width = "180" height = "120" class= "w3-hover-animate-zoom w3-animate-zoom-start"  >
+	 	<h3 class="w3-padding-32"><b>STIMAC<br>UNIVERSITY</b></h3>
+	 </div>
+
+	 <!-- Menu -->
+	 <div class="w3-bar-block">
+    		     
+              <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white class="dropbtn" ">HOME</a>  
+        <a href="Branch.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">BRANCH</a> 
+        <div class="dropdown">
+        <a href="apply1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">APPLY</a> 
+        <div class="dropdown-content">
+           <a href="COLLEGE.html">COLLEGE</a>
+           <a href="SHS.html">SR. HIGH</a>
+           <a href="JHS.html">JR. HIGH</a>
+        </div>  
+        </div>
+        <a href="course.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COURSE</a> 
+        <a href="abby.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CONTACT</a> 
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ABOUT US</a>
+        <br>
+        Moises G. Adolfo
+ 	</div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>STIMAC UNIVERSITY</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+	<div 
+		class="w3-overlay w3-hide-large"
+		onclick="w3_close()"
+		title="close side menu"
+		id="myOverlay">	
+	</div>
+
+<!-- !PAGE CONTENT! -->
+	
+	<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<!-- Header -->
+ 
+<!--Campuses-->
+
+	<div class="w3-container" id="showcase">
+    	<h1 class="w3-jumbo"><b>ABOUT US</b></h1>
+    	<h1 class="w3-xxxlarge w3-text-red w3-hover-fading"><b>CAMPUSES</b></h1>
+   		<hr style="width:260px;border:5px solid red" class="w3-round">
+      <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Stimac University is the <b> number 1 ! </b> Computer School in ASIA that have a <b> total of 1,512 Branches around the world ! <b>
+ 	 </div>
+
+ <!-- Photo grid (modal) (Left Side) -->
+
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Image/b1.jpg" style="width:90%" onclick="onClick(this)" alt="CALAMBA CAMPUS">
+      <img src="Image/b2.jpg" style="width:90%" onclick="onClick(this)" alt="AMERICA MAIN CAMPUS">
+      <img src="Image/b3.jpg" style="width:90%" onclick="onClick(this)" alt="DAVAO CAMPUS">
+    </div>
+
+<!-- Photo grid (modal) (Right Side) -->
+
+  <div class="w3-half">
+      <img src="Image/b4.jpg" style="width:90%" onclick="onClick(this)" alt="LOS BAÑOS CAMPUS">
+      <img src="Image/b5.jpg" style="width:90%" onclick="onClick(this)" alt="BATANES CAMPUS">
+      <img src="Image/b6.jpg" style="width:90%" onclick="onClick(this)" alt="LUNETA CAMPUS">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    
+    	<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      			<img id="img01" class="w3-image">
+     			 <p id="caption"></p>
+    	</div>
+  </div>
+
+  <!-- Mission -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+   		
+   		 <h1 class="w3-xxxlarge w3-text-red w3-hover-fading"><b>MISSION</b></h1>
+   		 <hr style="width:180px;border:5px solid red" class="w3-round">
+    	 <p align="justify"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp STIMAC University shall provide a holistic, relevant, quality and globally recognized IT-based education in all levels and disciplines with the objective of producing professionals and leaders responsive to the needs of Science and the international community cognizant of the welfare and benefits of its men and women thereby realizing their potential as productive members of the society for the honor and glory of God Almighty.</p>
+    
+  </div>
+
+    <!-- Vision -->
+  <div class="w3-container" id="designers" style="margin-top:40px">
+   		 <h1 class="w3-xxxlarge w3-text-red w3-hover-fading"> <b>VISION</b></h1>
+    	 <hr style="width:150px;border:5px solid red" class="w3-round">
+   
+   		 <p align="justify"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp STIMAC University will be the leader and dominant provider of relevant globally recognized information technology-based education and related services in the global market.
+    	</p>
+      <br>
+      <br>
+    
+  </div>
+
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="image/CEO.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>STANLY CRUZ</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="image/FOUNDER.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>IMAN SCZOBARCK</h3>
+          <p class="w3-opacity">FOUNDER</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="image/BOARDOFD.jpg" alt="Mike" style="width:100%" >
+        <div class="w3-container">
+          <h3>Carl Santos</h3>
+          <p class="w3-opacity">BOARD MEMBER</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<title>Stimac University | HOME</title>
+<link rel="icon" href="icon/university.ico" type="image\x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pagedesign.css">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="fontface.css">
+<link rel="stylesheet" href="cssicon.css">
+
+<!-- Sidebar/menu -->
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+   <div class="w3-container">
+     <img src = "Image\LOGO1.png" width = "180" height = "120" class= "w3-hover-animate-zoom w3-animate-zoom-start"  >
+    <h3 class="w3-padding-32"><b>STIMAC<br>UNIVERSITY</b></h3>
+   </div>
+
+   <!-- Menu -->
+   <div class="w3-bar-block">
+
+              <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white ">HOME</a>  
+        <a href="Branch.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">BRANCH</a> 
+        <div class="dropdown">
+        <a href="apply1.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">APPLY</a> 
+        <div class="dropdown-content">
+           <a href="COLLEGE.html">COLLEGE</a>
+           <a href="SHS.html">SR. HIGH</a>
+           <a href="JHS.html">JR. HIGH</a>
+        </div>  
+        </div>
+        <a href="course.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COURSE</a> 
+        <a href="abby.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CONTACT</a> 
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ABOUT US</a>
+        <br>
+        Moises G. Adolfo
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>STIMAC UNIVERSITY</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+  <div 
+    class="w3-overlay w3-hide-large"
+    onclick="w3_close()"
+    title="close side menu"
+    id="myOverlay"> 
+  </div>
+
+<!-- !PAGE CONTENT! -->
+  
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+<!-- Header -->
+ <hr style="width:100%;border:5px solid red" class="w3-round">
+ <div class="marquee" style="text-align:left;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity:0.9;">
+ <font size = 6 color = black face = "Impact" > <marquee class = "w3-animate-zoom-start">INQUIRE NOW!! &nbsp&nbsp&nbsp CALL : +58-8772-584  &nbsp&nbsp&nbsp  EMAIL US : STIMACUNIVERSITY@GMAIL.COM </marquee>  </font>
+</div>
+ <hr style="width:100%;border:5px solid red" class="w3-round">
+<!--Campuses-->
+<style>
+* 
+{
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url(image/chuchu.jpg);
+    font-family: Helvetica, sans-serif;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.left {
+    left: 0;
+}
+
+
+.right {
+    left: 50%;
+}
+
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+
+.right::after {
+    left: -13px;
+
+}
+
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+@media all and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+  
+ 
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+ 
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  
+  .right {
+    left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="timeline">
+  <div class="container left w3-animate-fade-start w3-animate-fade-hover">
+    <div class="content">
+      <h2>2017</h2>
+      <p>STIMAC become the number 1 !! University in ASIA througt hard work and passion of its founder and worker. </p>
+    </div>
+  </div>
+  <div class="container right w3-animate-fade-start w3-animate-fade-hover">
+    <div class="content ">
+      <h2>2016</h2>
+      <p>Stimac University receive recogniton in different country in ASIA that raise its popularity and became the top 5 University in ASIA..</p>
+    </div>
+  
+  </div>
+  <div class="container left w3-animate-fade-start w3-animate-fade-hover">
+    <div class="content">
+      <h2>2015</h2>
+      <p>STIMAC University became the number one school in the Philippines.</p>
+    </div>
+  </div>
+  <div class="container right w3-animate-fade-start w3-animate-fade-hover">
+    <div class="content">
+      <h2>2012</h2>
+      <p>STIMAC Univirsity bacame the number 1 computer and technology School in Manila.</p>
+    </div>
+  </div>
+  <div class="container left w3-animate-fade-start w3-animate-fade-hover">
+    <div class="content">
+      <h2>2011</h2>
+      <p>STIMAC University began to be a popular and attract many student to enroll in STIMAC beacouse of it's worker dedication and persivirance </p>
+    </div>
+  </div>
+  <div class="container right w3-animate-fade-start w3-animate-fade-hover">
+    <div class="content">
+      <h2>1980</h2>
+      <p> Stimac is founded by STANLY CRUZ and IMAN SCZOBARCK trough the help of thier friend Carl Santos at first thier school face many trial and problem like financial and political problem. But they pursue thier dream that one day Stimac will be the number 1 University is ASIA   </p>
+    </div>
+  </div>
+</div>
+
+ <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
